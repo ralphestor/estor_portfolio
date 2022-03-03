@@ -1,0 +1,132 @@
+.homeContainer {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+.homeName {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 90px;
+    letter-spacing: 45px;
+    padding-left: 45px;
+    color: #ffffff;
+    font-weight: 900;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -275%);
+    z-index: 15;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+.homeTitle {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    letter-spacing: 20px;
+    padding-left: 20px;
+    color: #293146;
+    font-weight: 900;
+    position: absolute;
+    width: 700px;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-15%, -400%);
+    z-index: 15;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.homeBox {
+    position: absolute;
+    width: 30vw;
+    height: 100vh;
+    background-color: #620000;
+    z-index: 5;
+}
+
+.homeCircle {
+    position: absolute;
+    width: 40%;
+    height: 0;
+    padding-bottom: 40%;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 50%;
+    z-index: 10;
+}
+
+.homeImgCont {
+    width: 50%;
+    height: 90vh;
+    position: relative;
+    z-index: 20;
+    align-self: flex-end;
+    left: 30%;
+    transform: translateX(-50%);
+    z-index: 20;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.homeLinks {
+    position: absolute;
+    list-style: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-10%, -30%);
+    z-index: 90;
+    user-drag: none;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.homeLink {
+    position: relative;
+    margin: 25px 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 50px;
+    letter-spacing: 25px;
+    padding-left: 25px;
+    color: #ffffff;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.homeLink-child {
+    position: relative;
+    padding: 10px 0px 10px 20px;
+}
+
+/* animation */
+.homeLink-child::before {  
+    transform: scaleX(0);
+    transform-origin: bottom right;
+  }
+  
+  .homeLink-child:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  
+  .homeLink-child::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    inset: 0 0 0 0;
+    background: #a5a5a5;
+    z-index: -1;
+    transition: transform .3s ease;
+  }
