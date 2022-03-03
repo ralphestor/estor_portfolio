@@ -19,7 +19,7 @@ export default function Home() {
           <div className='homeImgCont'>
             <Image
               className='homeImg'
-              src="/ralphgif_edit.gif"
+              src="/ralphgif_opt.gif"
               alt="Ralph Estor"
               layout='fill'
               objectFit='contain'
