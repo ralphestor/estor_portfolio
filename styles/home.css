@@ -2,6 +2,7 @@
     display: flex;
     width: 100%;
     height: 100vh;
+    overflow: hidden;
 }
 .homeName {
     font-family: 'Montserrat', sans-serif;
@@ -30,16 +31,16 @@
     color: #293146;
     font-weight: 900;
     position: absolute;
-    width: 700px;
     top: 50%;
     left: 50%;
-    text-align: center;
     transform: translate(-15%, -400%);
     z-index: 15;
     user-select: none;
     -moz-user-select: none;
     -webkit-user-select: none;
     -ms-user-select: none;
+    text-align: left;
+    width: fit-content;
 }
 
 .homeBox {
@@ -126,7 +127,74 @@
     position: absolute;
     top: 0; right: 0; bottom: 0; left: 0;
     inset: 0 0 0 0;
-    background: #a5a5a5;
+    background: #b3b3b3;
     z-index: -1;
     transition: transform .3s ease;
+  }
+
+  @media only screen and (max-width: 1220px) {
+    .homeName {
+        font-size: 70px;
+        letter-spacing: 35px;
+        padding-left: 35px;
+        transform: translate(-50%, -320%);
+    }
+    .homeTitle {
+        font-size: 30px;
+        letter-spacing: 15px;
+        padding-left: 15px;
+        transform: translate(-10%, -500%);
+    }
+    .homeLinks {
+        transform: translate(-10%, -30%);
+    }
+    .homeLink {
+        margin: 30px 0;
+        font-size: 40px;
+        letter-spacing: 20px;
+        padding-left: 20px;
+    }
+  }
+
+  @media only screen and (max-width: 1024px) {
+    .homeHeader {
+        display: none;
+    }
+    .homeName {
+        border: 2px solid red;
+        font-size: 70px;
+        letter-spacing: 35px;
+        padding-left: 35px;
+        transform: translate(-50%, -320%);
+    }
+    .homeTitle {
+        font-size: 30px;
+        letter-spacing: 15px;
+        padding-left: 15px;
+        transform: translate(-10%, -500%);
+    }
+    .homeLinks {
+        display: none;
+    }
+    .homeBox {
+        width: 50vw;
+    }
+    .homeCircle {
+        width: 80%;
+        padding-bottom: 80%;
+        left: 50%;
+    }
+    .homeImgCont {
+        width: 100%;
+        height: 90vh;
+        position: relative;
+        z-index: 20;
+        align-self: flex-end;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 20;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        user-select: none;
+    }
   }
