@@ -5,9 +5,9 @@
 }
 .homeName {
     font-family: 'Montserrat', sans-serif;
-    font-size: 90px;
-    letter-spacing: 45px;
-    padding-left: 45px;
+    font-size: 80px;
+    letter-spacing: 40px;
+    padding-left: 40px;
     color: #ffffff;
     font-weight: 900;
     position: absolute;
@@ -15,7 +15,7 @@
     top: 50%;
     left: 50%;
     text-align: center;
-    transform: translate(-50%, -275%);
+    transform: translate(-50%, -300%);
     z-index: 15;
     user-select: none;
     -moz-user-select: none;
@@ -32,7 +32,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-15%, -400%);
+    transform: translate(-15%, -420%);
     z-index: 15;
     user-select: none;
     -moz-user-select: none;
@@ -75,6 +75,8 @@
     -moz-user-select: none;
     -webkit-user-select: none;
     user-select: none;
+
+
 }
 
 .homeLinks {
@@ -131,42 +133,6 @@
     transition: transform .3s ease;
   }
 
-  /* height responsiveness */
-  @media only screen and (max-height: 600px) {
-    .homeContainer{
-        height: 600px;
-    }
-    .homeBox {
-        height: 600px;
-    }
-    .homeCircle {
-        width: 40%;
-        height: 0;
-        padding-bottom: 40%;
-        top: 30px;
-        left: 30%;
-        transform: translate(-50%, 0);
-        background-color: rgba(255, 255, 255, 0.05);
-        border-radius: 50%;
-        z-index: 10;
-    }
-    .homeName {
-        top: 5px;
-        left: 0;
-        transform: translate(0, 0);
-    }
-    .homeTitle {
-        top: 110px;
-        left: 570px;
-        transform: translate(0, 0);
-    }
-    .homeLinks {
-        top: 200px;
-        left: 600px;
-        transform: translate(0, 0);
-    }
-  }
-
   /* width responsiveness */
   @media only screen and (max-width: 1220px) {
     .homeName {
@@ -192,6 +158,43 @@
     }
   }
 
+    /* height responsiveness */
+    @media only screen and (max-height: 600px) {
+        .homeContainer{
+            height: 600px;
+        }
+        .homeBox {
+            height: 600px;
+        }
+        .homeCircle {
+            width: 40%;
+            height: 0;
+            padding-bottom: 40%;
+            top: 30px;
+            left: 30%;
+            transform: translate(-50%, 0);
+            background-color: rgba(255, 255, 255, 0.05);
+            border-radius: 50%;
+            z-index: 10;
+        }
+        .homeName {
+            top: 5px;
+            left: 0;
+            transform: translate(0, 0);
+        }
+        .homeTitle {
+            top: 90px;
+            left: 50%;
+            transform: translate(-10%, 0);
+        }
+        .homeLinks {
+            top: 200px;
+            left: 50%;
+            transform: translate(-10%, 0);
+        }
+      }
+    
+
   @media only screen and (max-width: 1024px) {
     .homeHeader {
         display: none;
@@ -216,8 +219,8 @@
         width: 50vw;
     }
     .homeCircle {
-        width: 80%;
-        padding-bottom: 80%;
+        width: 60%;
+        padding-bottom: 60%;
         left: 50%;
     }
     .homeImgCont {
@@ -232,5 +235,21 @@
         -moz-user-select: none;
         -webkit-user-select: none;
         user-select: none;
+    }
+  }
+
+  @media only screen and (max-width: 800px) {
+    .homeCircle {
+        width: 75%;
+        padding-bottom: 75%;
+        left: 50%;
+    }
+  }
+
+  @media only screen and (max-width: 600px){
+    .homeCircle {
+        width: 100%;
+        padding-bottom: 100%;
+        left: 50%;
     }
   }
