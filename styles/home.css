@@ -5,9 +5,9 @@
 }
 .homeName {
     font-family: 'Montserrat', sans-serif;
-    font-size: 80px;
-    letter-spacing: 40px;
-    padding-left: 40px;
+    font-size: 120px;
+    letter-spacing: 60px;
+    padding-left: 60px;
     color: #ffffff;
     font-weight: 900;
     position: absolute;
@@ -15,7 +15,7 @@
     top: 50%;
     left: 50%;
     text-align: center;
-    transform: translate(-50%, -300%);
+    transform: translate(-50%, -290%);
     z-index: 15;
     user-select: none;
     -moz-user-select: none;
@@ -24,15 +24,15 @@
 }
 .homeTitle {
     font-family: 'Montserrat', sans-serif;
-    font-size: 40px;
-    letter-spacing: 20px;
-    padding-left: 20px;
+    font-size: 45px;
+    letter-spacing: 30px;
+    padding-left: 30px;
     color: #293146;
     font-weight: 900;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-15%, -420%);
+    transform: translate(-25%, -550%);
     z-index: 15;
     user-select: none;
     -moz-user-select: none;
@@ -65,26 +65,26 @@
 
 .homeImgCont {
     width: 50%;
-    height: 90%;
-    position: relative;
+    height: 85%;
+    position: absolute;
     z-index: 20;
-    align-self: flex-end;
+    bottom: 0;
     left: 30%;
     transform: translateX(-50%);
     z-index: 20;
     -moz-user-select: none;
     -webkit-user-select: none;
     user-select: none;
-
-
 }
+
+
 
 .homeLinks {
     position: absolute;
     list-style: none;
     top: 50%;
     left: 50%;
-    transform: translate(-10%, -30%);
+    transform: translate(-15%, -30%);
     z-index: 90;
     user-drag: none;
     -webkit-user-drag: none;
@@ -98,9 +98,9 @@
     position: relative;
     margin: 30px 0;
     font-family: 'Montserrat', sans-serif;
-    font-size: 50px;
-    letter-spacing: 25px;
-    padding-left: 25px;
+    font-size: 80px;
+    letter-spacing: 40px;
+    padding-left: 40px;
     color: #ffffff;
     font-weight: 900;
     text-transform: uppercase;
@@ -133,22 +133,100 @@
     transition: transform .3s ease;
   }
 
-  /* width responsiveness */
+  @media only screen and (max-width: 1720px) {
+    .homeName {
+        font-size: 110px;
+        letter-spacing: 55px;
+        padding-left: 55px;
+        transform: translate(-50%, -310%);
+    }
+    .homeTitle {
+        font-size: 40px;
+        letter-spacing: 27px;
+        padding-left: 27px;
+        transform: translate(-25%, -610%);
+    }
+    
+    .homeLinks {
+        transform: translate(-10%, -30%);
+    }
+    
+    .homeLink {
+        margin: 30px 0;
+        font-size: 66px;
+        letter-spacing: 33px;
+        padding-left: 33px;
+    }
+  }
+
+  @media only screen and (max-width: 1536px) {
+    .homeName {
+        font-size: 100px;
+        letter-spacing: 50px;
+        padding-left: 50px;
+        transform: translate(-50%, -330%);
+    }
+    .homeTitle {
+        font-size: 35px;
+        letter-spacing: 25px;
+        padding-left: 25px;
+        transform: translate(-25%, -680%);
+    }
+    
+    .homeLinks {
+        transform: translate(-5%, -30%);
+    }
+    
+    .homeLink {
+        margin: 30px 0;
+        font-size: 60px;
+        letter-spacing: 30px;
+        padding-left: 30px;
+    }
+  }
+
+  @media only screen and (max-width: 1366px) {
+    .homeName {
+        font-size: 80px;
+        letter-spacing: 40px;
+        padding-left: 40px;
+        transform: translate(-50%, -400%);
+    }
+    .homeTitle {
+        font-size: 30px;
+        letter-spacing: 20px;
+        padding-left: 20px;
+        transform: translate(-25%, -810%);
+    }
+    
+    .homeLinks {
+        transform: translate(0, -30%);
+    }
+    
+    .homeLink {
+        margin: 30px 0;
+        font-size: 50px;
+        letter-spacing: 25px;
+        padding-left: 25px;
+    }
+  }
+
+
   @media only screen and (max-width: 1220px) {
     .homeName {
         font-size: 70px;
         letter-spacing: 35px;
         padding-left: 35px;
-        transform: translate(-50%, -320%);
+        transform: translate(-50%, -440%);
     }
     .homeTitle {
-        font-size: 30px;
+        font-size: 25px;
         letter-spacing: 15px;
         padding-left: 15px;
-        transform: translate(-10%, -500%);
+        transform: translate(-30%, -990%);
     }
     .homeLinks {
-        transform: translate(-10%, -30%);
+        transform: translate(10%, -30%);
     }
     .homeLink {
         margin: 30px 0;
@@ -158,7 +236,7 @@
     }
   }
 
-    /* height responsiveness */
+    /* desktop height responsiveness */
     @media only screen and (max-height: 600px) {
         .homeContainer{
             height: 600px;
@@ -200,7 +278,6 @@
         display: none;
     }
     .homeName {
-        border: 2px solid red;
         font-size: 70px;
         letter-spacing: 35px;
         padding-left: 35px;
@@ -225,7 +302,7 @@
     }
     .homeImgCont {
         width: 100%;
-        height: 90vh;
+        height: 75vh;
         position: relative;
         z-index: 20;
         align-self: flex-end;
